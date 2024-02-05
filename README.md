@@ -18,7 +18,9 @@ _TalentHive_ is a web-based application designed to streamline and enhance the r
 3. Install dependencies for both the client and the server.
    
    `cd recruiter-tool`
+   
    `cd client && npm install`
+   
    `cd ../server && npm install`
 
 5. Set up your PostgreSQL database via ElephantSQL.
