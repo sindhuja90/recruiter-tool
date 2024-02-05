@@ -37,10 +37,10 @@ _TalentHive_ is a web-based application designed to streamline and enhance the r
    `cd server && npm start`
 
 10. Run the client.
-    
-   `cd client && npm start`
 
-Visit {http://localhost:3000} in your browser to access TalentHive.
+    `cd client && npm start`
+
+Visit http://localhost:3000 in your browser to access TalentHive.
 
 ### Deployment Link
 
