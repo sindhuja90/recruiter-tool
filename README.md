@@ -2,7 +2,7 @@
 
 ## TalentHive - Recruitment Management System
 
-_TalentHive_ is a web-based application designed to streamline and enhance the recruitment process. Built with _React_, _Tailwind CSS_, _Node.js_, and _PostgreSQL_ via _ElephantSQL_, TalentHive offers a user-friendly interface for managing candidate data effectively.
+_TalentHive_ is a web-based application designed to streamline and enhance the recruitment process. Built with _React_, _Tailwind CSS_, _Express.js_, and _PostgreSQL_ via _ElephantSQL_, TalentHive offers a user-friendly interface for managing candidate data effectively.
 
 ### Features
 1. **Candidate Management**: Easily add, update, and delete candidate details.
