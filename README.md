@@ -27,7 +27,7 @@ _TalentHive_ is a web-based application designed to streamline and enhance the r
 5. Set up your PostgreSQL database via ElephantSQL.
    - Create an ElephantSQL account.
    - Create a database instance.
-   - Create a .env file in `/server` folder and add the following variable:
+   - Create a `.env` file in `/server` folder and add the following variable:
      
      ```
      DATABASE_URL="insert-your-database-instance-URL-from-Details-page"
