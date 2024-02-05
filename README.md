@@ -12,27 +12,32 @@ _TalentHive_ is a web-based application designed to streamline and enhance the r
 
 ### Installation
 1. Clone the repository.
+   
    `git clone https://github.com/sindhuja90/recruiter-tool.git`
 
-2. Install dependencies for both the client and the server.
+3. Install dependencies for both the client and the server.
+   
    `cd recruiter-tool`
    `cd client && npm install`
    `cd ../server && npm install`
 
-3. Set up your PostgreSQL database via ElephantSQL.
+5. Set up your PostgreSQL database via ElephantSQL.
    - Create an ElephantSQL account.
    - Create a database instance.
    - Create a .env file in `/server` folder and add the following variable:
      `DATABASE_URL=*<insert database instance URL from Details page>*`
 
-4. Seed the database.
+6. Seed the database.
+   
    In the root directory, run the following command in your terminal to create the database table and seed the initial data.
    `cd server && npm run seed`
 
-6. Run the server.
+8. Run the server.
+   
    `cd server && npm start`
 
-7. Run the client.
+10. Run the client.
+    
    `cd client && npm start`
 
 Visit {http://localhost:3000} in your browser to access TalentHive.
