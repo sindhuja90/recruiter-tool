@@ -18,9 +18,10 @@ _TalentHive_ is a web-based application designed to streamline and enhance the r
 
 3. Install dependencies for both the client and the server.
    ```
-   cd recruiter-tool
-   cd client && npm install
-   cd ../server && npm install
+   cd recruiter-tool/client
+   npm install
+   cd ../server
+   npm install
    ```
 
 5. Set up your PostgreSQL database via ElephantSQL.
@@ -29,24 +30,27 @@ _TalentHive_ is a web-based application designed to streamline and enhance the r
    - Create a .env file in `/server` folder and add the following variable:
      
      ```
-     DATABASE_URL=<insert database instance URL from Details page>
+     DATABASE_URL=<insert-your-database-instance-URL-from-Details-page>
      ```
 
 6. Seed the database.
    
    In the root directory, run the following command in your terminal to create the database table and seed the initial data.
    ```
-   cd server && npm run seed
+   cd server
+   npm run seed
    ```
 
 8. Run the server.
    ```
-   cd server && npm start
+   cd server
+   npm start
    ```
 
 10. Run the client.
     ```
-    cd client && npm start
+    cd client
+    npm start
     ```
 
 Visit http://localhost:3000 in your browser to access TalentHive.
