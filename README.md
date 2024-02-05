@@ -35,7 +35,7 @@ _TalentHive_ is a web-based application designed to streamline and enhance the r
 
 6. Seed the database.
    
-   In the root directory, run the following commands in your terminal to create the database table and seed the initial data.
+   In the root directory, run the following commands in your terminal to create the database table and seed the database with initial data.
    ```
    cd server
    npm run seed
