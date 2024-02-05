@@ -129,6 +129,7 @@ const AddCandidateModal = ({ isOpen, onClose, onAdd }) => {
               id="phoneNumber"
               type="text"
               value={phoneNumber}
+              placeholder="10-digit number"
               onChange={(e) => setPhoneNumber(e.target.value.replace(/\D/, ""))}
               className="w-full p-2 mb-4 border rounded-md"
             />
@@ -140,6 +141,7 @@ const AddCandidateModal = ({ isOpen, onClose, onAdd }) => {
               id="skillsQualifications"
               type="text"
               value={skillsQualifications}
+              placeholder="Comma-separated values"
               onChange={(e) => setSkillsQualifications(e.target.value)}
               className="w-full p-2 mb-4 border rounded-md"
             />
@@ -170,6 +172,7 @@ const AddCandidateModal = ({ isOpen, onClose, onAdd }) => {
               id="expectedSalary"
               type="text"
               value={expectedSalary}
+              placeholder="in INR"
               onChange={(e) =>
                 setExpectedSalary(e.target.value.replace(/\D/, ""))
               }
@@ -185,6 +188,7 @@ const AddCandidateModal = ({ isOpen, onClose, onAdd }) => {
                   id="nodeJsExperience"
                   type="text"
                   value={nodeJsExperience}
+                  placeholder="in years"
                   onChange={(e) =>
                     setNodeJsExperience(e.target.value.replace(/[^0-9]/g, ""))
                   }
@@ -200,6 +204,7 @@ const AddCandidateModal = ({ isOpen, onClose, onAdd }) => {
                   id="reactJsExperience"
                   type="text"
                   value={reactJsExperience}
+                  placeholder="in years"
                   onChange={(e) =>
                     setReactJsExperience(e.target.value.replace(/[^0-9]/g, ""))
                   }

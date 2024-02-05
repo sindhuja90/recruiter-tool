@@ -125,7 +125,7 @@ const CandidateTable = () => {
             <th className="py-2">EMAIL ID</th>
             <th className="py-2">PHONE NO.</th>
             <th className="py-2">SKILLS/QUALIFICATIONS</th>
-            <th className="py-2">STAUTS</th>
+            <th className="py-2">STATUS</th>
             <th className="py-2">EXPECTED SALARY</th>
             <th className="py-2">
               COMPUTED SCORE{" "}
