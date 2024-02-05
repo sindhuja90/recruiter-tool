@@ -30,24 +30,28 @@ _TalentHive_ is a web-based application designed to streamline and enhance the r
    - Create a .env file in `/server` folder and add the following variable:
      
      ```
-     DATABASE_URL=<insert-your-database-instance-URL-from-Details-page>
+     DATABASE_URL="insert-your-database-instance-URL-from-Details-page"
      ```
 
 6. Seed the database.
    
-   In the root directory, run the following command in your terminal to create the database table and seed the initial data.
+   In the root directory, run the following commands in your terminal to create the database table and seed the initial data.
    ```
    cd server
    npm run seed
    ```
 
 8. Run the server.
+
+   In the root directory, run the following commands in your terminal to start the server.
    ```
    cd server
    npm start
    ```
 
 10. Run the client.
+
+    In the root directory, run the following commands in another terminal to start the client.
     ```
     cd client
     npm start
