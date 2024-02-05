@@ -43,6 +43,8 @@ _TalentHive_ is a web-based application designed to streamline and enhance the r
 Visit http://localhost:3000 in your browser to access TalentHive.
 
 ### Deployment Link
+Access the application [here](https://example.com/).
 
 ### Demo
+[Watch a demo](https://example.com/) to see how TalentHive works. 
 
