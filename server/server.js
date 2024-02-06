@@ -14,6 +14,7 @@ const app = express();
 // Setting up the port for the server
 const port = process.env.PORT || 5000;
 
+// CORS configuration
 const corsOptions = {
   origin: ["http://localhost:3000", process.env.BACKEND_URL],
   optionsSuccessStatus: 200,
