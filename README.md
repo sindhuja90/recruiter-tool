@@ -2,7 +2,7 @@
 
 ## TalentHive - Recruitment Management System
 
-_TalentHive_ is a web-based application designed to streamline and enhance the recruitment process. Built with _React_, _Tailwind CSS_, _Express.js_, and _PostgreSQL_ via _ElephantSQL_, TalentHive offers a user-friendly interface for managing candidate data effectively.
+_TalentHive_ is a web-based application designed to streamline and enhance the recruitment process. Built with _React_, _Tailwind CSS_, _Express.js_, _Node.js_, and _PostgreSQL_ via _ElephantSQL_, TalentHive offers a user-friendly interface for managing candidate data effectively.
 
 ### Features
 1. **Candidate Management**: Easily add, update, and delete candidate details.
@@ -35,23 +35,24 @@ _TalentHive_ is a web-based application designed to streamline and enhance the r
 
 6. Seed the database.
    
-   In the root directory, run the following commands in your terminal to create the database table and seed the database with initial data.
+   In the root directory (`/recruiter-tool`), run the following commands in your terminal to create the database table and seed the database with initial data.
    ```
    cd server
    npm run seed
    ```
 
-8. Run the server.
+8. Start the backend server.
 
-   In the root directory, run the following commands in your terminal to start the server.
+   The backend server will be available at http://localhost:5000.
+   In the root directory (`/recruiter-tool`), run the following commands in your terminal to start the backend server.
    ```
    cd server
    npm start
    ```
 
-10. Run the client.
+10. Start the frontend server.
 
-    In the root directory, run the following commands in another terminal to start the client.
+    In the root directory (`/recruiter-tool`), run the following commands in another terminal to start the client.
     ```
     cd client
     npm start
@@ -59,9 +60,8 @@ _TalentHive_ is a web-based application designed to streamline and enhance the r
 
 Visit http://localhost:3000 in your browser to access TalentHive.
 
-### Deployment Link
+### Application Link
 The app is deployed on Netlify and accessible at [https://talenthive.netlify.app/](https://talenthive.netlify.app/).
 
 ### Demo
-[Watch a demo](https://example.com/) to see how TalentHive works. 
-
+Watch a demo of TalentHive [here](https://example.com/).
