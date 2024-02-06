@@ -25,15 +25,15 @@ _TalentHive_ is a web-based application designed to streamline and enhance the r
    ```
 
 5. Set up your PostgreSQL database via ElephantSQL.
-   - Create an ElephantSQL account.
-   - Create a database instance.
+   - If you haven't already, sign up for an ElephantSQL account at https://www.elephantsql.com/.
+   - Create a new database instance.
    - Create a `.env` file in `/server` folder and add the following variable:
      
      ```
      DATABASE_URL="insert-your-database-instance-URL-from-Details-page"
      ```
 
-6. Seed the database.
+7. Seed the database.
    
    In the root directory (`/recruiter-tool`), run the following commands in your terminal to create the database table and seed the database with initial data.
    ```
@@ -60,8 +60,42 @@ _TalentHive_ is a web-based application designed to streamline and enhance the r
 
 Visit http://localhost:3000 in your browser to access TalentHive.
 
+### Optional: Hosting Your Application
+#### Deploying Backend to Render
+1. If you haven't already, sign up for a Render account at https://render.com/.
+2. Connect a Github repository and create a new web service.
+3. Configure web service and deploy.
+   - Set the root directory to `server`.
+     
+   - Set the build command to `npm install` and the start command to `npm start`.
+     
+   - Set the environment variable `DATABASE_URL` with your ElephantSQL database instance URL.
+     
+4. Update Proxy in Frontend.
+
+   In the `package.json` file of the frontend application (`/client`), update the proxy to point to the backend service URL on Render.
+
+5. Create a `.env` file in `/client` folder and add the following variable.
+   
+   ```
+   REACT_APP_BACKEND_URL="insert-your-backend-service-URL-on-Render"
+   ```
+
+#### Deploying Frontend to Netlify
+The frontend client can be hosted separately on services like Netlify.
+1. If you haven't already, sign up for a Netlify account at https://www.netlify.com/.
+   
+2. Connect a Github repository and create a new web service.
+   
+3. Configure the site and deploy
+   - Set the base directory to `client`.
+     
+   - Set the build command to `npm run build` and set the publish directory to `client/build`.
+     
+   - Set the environment variable `REACT_APP_BACKEND_URL` with the URL of your backend service.
+
 ### Application Link
-The app is deployed on Netlify and accessible at [https://talenthive.netlify.app/](https://talenthive.netlify.app/).
+The app is deployed on Netlify and accessible at https://talenthive.netlify.app/.
 
 ### Demo
 Watch a demo of TalentHive [here](https://example.com/).
