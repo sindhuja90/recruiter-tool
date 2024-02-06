@@ -2,6 +2,9 @@ import React, { useState } from "react";
 
 // Modal for updating candidate details
 const UpdateCandidateModal = ({ isOpen, onClose, candidateName, onUpdate }) => {
+  // Base URL for the backend server
+  const baseURL = process.env.BACKEND_URL || "http://localhost:5000";
+
   // State to manage the current status of the candidate
   const [currentStatus, setCurrentStatus] = useState("");
 
@@ -14,7 +17,7 @@ const UpdateCandidateModal = ({ isOpen, onClose, candidateName, onUpdate }) => {
   const handleSubmit = async () => {
     if (candidateName && currentStatus) {
       try {
-        const response = await fetch("http://localhost:5000/update-candidate", {
+        const response = await fetch(baseURL + "/update-candidate", {
           method: "POST",
           headers: {
             "Content-Type": "application/json",

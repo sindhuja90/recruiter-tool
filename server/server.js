@@ -33,6 +33,11 @@ pool.connect((err, client, done) => {
   }
 });
 
+// Route for the home page
+app.get("/", (req, res) => {
+  res.send("Welcome to TalentHive!");
+});
+
 // Route for adding a new candidate
 app.post("/add-candidate", (req, res) => {
   const formData = req.body;

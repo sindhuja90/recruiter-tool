@@ -2,6 +2,9 @@ import React, { useState } from "react";
 
 // AddCandidateModal component for displaying the modal to add a new candidate
 const AddCandidateModal = ({ isOpen, onClose, onAdd }) => {
+  // Base URL for the backend server
+  const baseURL = process.env.BACKEND_URL || "http://localhost:5000";
+
   // State variables to store form input values
   const [candidateName, setCandidateName] = useState("");
   const [emailId, setEmailId] = useState("");
@@ -37,7 +40,7 @@ const AddCandidateModal = ({ isOpen, onClose, onAdd }) => {
       reactJsExperience
     ) {
       try {
-        const response = await fetch("http://localhost:5000/add-candidate", {
+        const response = await fetch(baseURL + "/add-candidate", {
           method: "POST",
           headers: {
             "Content-Type": "application/json",

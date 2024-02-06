@@ -2,10 +2,13 @@ import React from "react";
 
 // DeleteCandidateModal component for confirming candidate deletion
 const DeleteCandidateModal = ({ isOpen, onClose, candidateName, onDelete }) => {
+  // Base URL for the backend server
+  const baseURL = process.env.BACKEND_URL || "http://localhost:5000";
+
   // Function to handle the submission of the delete candidate form
   const handleSubmit = async () => {
     try {
-      const response = await fetch("http://localhost:5000/delete-candidate", {
+      const response = await fetch(baseURL + "/delete-candidate", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
