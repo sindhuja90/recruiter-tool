@@ -14,14 +14,8 @@ const app = express();
 // Setting up the port for the server
 const port = process.env.PORT || 5000;
 
-// CORS configuration
-const corsOptions = {
-  origin: ["http://localhost:3000", process.env.BACKEND_URL],
-  optionsSuccessStatus: 200,
-};
-
 // Middleware setup
-app.use(cors(corsOptions)); // Enable CORS for all routes
+app.use(cors()); // Enable CORS for all routes
 app.use(morgan("dev")); // Log HTTP requests to the console
 app.use(bodyParser.json()); // Parse JSON requests
 

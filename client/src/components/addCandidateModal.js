@@ -3,7 +3,9 @@ import React, { useState } from "react";
 // AddCandidateModal component for displaying the modal to add a new candidate
 const AddCandidateModal = ({ isOpen, onClose, onAdd }) => {
   // Base URL for the backend server
-  const baseURL = process.env.BACKEND_URL || "http://localhost:5000";
+  const baseURL =
+    "https://recruiter-tool-backend-yxsl.onrender.com" ||
+    "http://localhost:5000";
 
   // State variables to store form input values
   const [candidateName, setCandidateName] = useState("");
@@ -42,6 +44,7 @@ const AddCandidateModal = ({ isOpen, onClose, onAdd }) => {
       try {
         const response = await fetch(baseURL + "/add-candidate", {
           method: "POST",
+          mode: "cors",
           headers: {
             "Content-Type": "application/json",
           },

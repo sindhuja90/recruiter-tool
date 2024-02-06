@@ -3,7 +3,9 @@ import React, { useState } from "react";
 // Modal for updating candidate details
 const UpdateCandidateModal = ({ isOpen, onClose, candidateName, onUpdate }) => {
   // Base URL for the backend server
-  const baseURL = process.env.BACKEND_URL || "http://localhost:5000";
+  const baseURL =
+    "https://recruiter-tool-backend-yxsl.onrender.com" ||
+    "http://localhost:5000";
 
   // State to manage the current status of the candidate
   const [currentStatus, setCurrentStatus] = useState("");
@@ -19,6 +21,7 @@ const UpdateCandidateModal = ({ isOpen, onClose, candidateName, onUpdate }) => {
       try {
         const response = await fetch(baseURL + "/update-candidate", {
           method: "POST",
+          mode: "cors",
           headers: {
             "Content-Type": "application/json",
           },

@@ -5,16 +5,20 @@ import CandidateTableRow from "./candidateTableRow.js";
 // CandidateTable component for displaying the candidate table
 const CandidateTable = () => {
   // Base URL for the backend server
-  const baseURL = process.env.BACKEND_URL || "http://localhost:5000";
+  const baseURL =
+    "https://recruiter-tool-backend-yxsl.onrender.com" ||
+    "http://localhost:5000";
 
   // State variable to store the list of candidates
   const [candidates, setCandidates] = useState([]);
 
   // Fetch candidates from the server when the component mounts
   useEffect(() => {
-    const baseURL = process.env.BACKEND_URL || "http://localhost:5000";
+    const baseURL =
+      "https://recruiter-tool-backend-yxsl.onrender.com" ||
+      "http://localhost:5000";
 
-    fetch(baseURL + "/read-candidates")
+    fetch(baseURL + "/read-candidates", { mode: "cors" })
       .then((response) => response.json())
       .then((data) => setCandidates(data))
       .catch((error) => console.error("Error fetching candidates:", error));
@@ -35,7 +39,7 @@ const CandidateTable = () => {
 
   // Function to refresh table after adding a new candidate
   const handleAddCandidate = () => {
-    fetch(baseURL + "/read-candidates")
+    fetch(baseURL + "/read-candidates", { mode: "cors" })
       .then((response) => response.json())
       .then((data) => setCandidates(data))
       .catch((error) => console.error("Error fetching candidates:", error));
