@@ -60,7 +60,7 @@ _TalentHive_ is a web-based application designed to streamline and enhance the r
 Visit http://localhost:3000 in your browser to access TalentHive.
 
 ### Deployment Link
-Access the deployed application [here](https://example.com/).
+The app is deployed on Netlify and accessible at [https://talenthive.netlify.app/](https://talenthive.netlify.app/).
 
 ### Demo
 [Watch a demo](https://example.com/) to see how TalentHive works. 
