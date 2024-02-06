@@ -3,9 +3,7 @@ import React, { useState } from "react";
 // AddCandidateModal component for displaying the modal to add a new candidate
 const AddCandidateModal = ({ isOpen, onClose, onAdd }) => {
   // Base URL for the backend server
-  const baseURL =
-    "https://recruiter-tool-backend-yxsl.onrender.com" ||
-    "http://localhost:5000";
+  const baseURL = process.env.REACT_APP_BACKEND_URL || "http://localhost:5000";
 
   // State variables to store form input values
   const [candidateName, setCandidateName] = useState("");

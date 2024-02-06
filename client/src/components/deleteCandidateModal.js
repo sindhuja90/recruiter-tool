@@ -3,9 +3,7 @@ import React from "react";
 // DeleteCandidateModal component for confirming candidate deletion
 const DeleteCandidateModal = ({ isOpen, onClose, candidateName, onDelete }) => {
   // Base URL for the backend server
-  const baseURL =
-    "https://recruiter-tool-backend-yxsl.onrender.com" ||
-    "http://localhost:5000";
+  const baseURL = process.env.REACT_APP_BACKEND_URL || "http://localhost:5000";
 
   // Function to handle the submission of the delete candidate form
   const handleSubmit = async () => {

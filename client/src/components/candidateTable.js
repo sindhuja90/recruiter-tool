@@ -5,9 +5,7 @@ import CandidateTableRow from "./candidateTableRow.js";
 // CandidateTable component for displaying the candidate table
 const CandidateTable = () => {
   // Base URL for the backend server
-  const baseURL =
-    "https://recruiter-tool-backend-yxsl.onrender.com" ||
-    "http://localhost:5000";
+  const baseURL = process.env.REACT_APP_BACKEND_URL || "http://localhost:5000";
 
   // State variable to store the list of candidates
   const [candidates, setCandidates] = useState([]);
@@ -15,8 +13,7 @@ const CandidateTable = () => {
   // Fetch candidates from the server when the component mounts
   useEffect(() => {
     const baseURL =
-      "https://recruiter-tool-backend-yxsl.onrender.com" ||
-      "http://localhost:5000";
+      process.env.REACT_APP_BACKEND_URL || "http://localhost:5000";
 
     fetch(baseURL + "/read-candidates", { mode: "cors" })
       .then((response) => response.json())
