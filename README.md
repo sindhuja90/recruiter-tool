@@ -108,4 +108,4 @@ The app is deployed on Netlify and accessible at https://talenthive.netlify.app/
 
 ### Demo
 
-Watch a demo of TalentHive [here](https://example.com/).
+Watch a demo of TalentHive [here](https://www.youtube.com/watch?v=boQkzW9zjHs).
